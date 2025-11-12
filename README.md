@@ -29,20 +29,34 @@ El proyecto está dividido en dos partes principales:
 ## 🏗️ Estructura del proyecto
 
 task-manager/
+
 │
+
 ├── backend/ # Servidor Express + Sequelize
+
 │ ├── models/ # Definición de modelos Sequelize
+
 │ ├── routes/ # Endpoints de la API
+
 │ ├── controllers/ # Lógica del negocio (CRUD)
+
 │ ├── middlewares/ # Autenticación JWT
+
 │ └── server.js # Punto de entrada del backend
+
 │
 └── frontend/ # Aplicación React (Vite)
+
 ├── src/
+
 │ ├── pages/ # Páginas principales (Home, Login, Register, Tasks)
+
 │ ├── api/ # Conexión con el backend
+
 │ └── App.jsx # Estructura principal
+
 └── vite.config.js
+
 
 ---
 
@@ -122,4 +136,5 @@ Abre un Pull Request 🚀
 🧑‍💻 Autor
 Johan Sebastián Posso
 GitHub
+
 
