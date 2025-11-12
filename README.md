@@ -44,9 +44,6 @@ task-manager/
 │ └── App.jsx # Estructura principal
 └── vite.config.js
 
-yaml
-Copiar código
-
 ---
 
 ## ⚙️ Instalación y ejecución
@@ -104,9 +101,6 @@ DELETE	/api/tasks/:id	Elimina una tarea	✅
 
 ✅ = requiere token JWT válido
 
-📱 Capturas de pantalla
-(Agrega aquí imágenes del frontend si lo deseas, por ejemplo frontend/public/screenshot.png.)
-
 🤝 Contribuciones
 Si deseas contribuir:
 
@@ -128,3 +122,4 @@ Abre un Pull Request 🚀
 🧑‍💻 Autor
 Johan Sebastián Posso
 GitHub
+
