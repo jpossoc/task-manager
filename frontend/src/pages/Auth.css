@@ -1,0 +1,137 @@
+/* ====== Estilos base (PC / escritorio) ====== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: "Inter", sans-serif;
+}
+
+.auth-card {
+  background-color: #1e293b;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  color: white;
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #334155;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-form input:focus {
+  outline: 2px solid #6366f1;
+  background-color: #475569;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #4f46e5;
+}
+
+.auth-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-link span {
+  color: #818cf8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-link span:hover {
+  text-decoration: underline;
+}
+
+/* ====== Responsive design para tablets ====== */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 1.5rem;
+  }
+
+  .auth-card {
+    width: 90%;
+    max-width: 350px;
+    padding: 2rem;
+  }
+
+  .auth-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .auth-form input {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .auth-form button {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .auth-link {
+    font-size: 0.85rem;
+  }
+}
+
+/* ====== Ajuste extra para celulares pequeños ====== */
+@media (max-width: 420px) {
+  .auth-container {
+    padding: 1rem;
+  }
+
+  .auth-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .auth-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .auth-form input {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .auth-form button {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .auth-link {
+    font-size: 0.8rem;
+  }
+}

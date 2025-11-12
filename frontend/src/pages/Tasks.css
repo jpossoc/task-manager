@@ -1,0 +1,156 @@
+.tasks-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 2rem;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tasks-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.task-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #334155;
+  color: white;
+}
+
+.task-form button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #4f46e5;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; /* permite que el contenido se reorganice */
+  gap: 1rem;
+}
+
+.task-card.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.task-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.task-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.task-actions button:hover {
+  background-color: #2563eb;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.no-tasks {
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+/* 🔹 Ajustes responsivos */
+@media (max-width: 768px) {
+  /* el botón de agregar pasa debajo del input */
+  .task-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* los botones dentro de cada tarjeta pasan debajo del texto */
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* encabezado: botón de logout debajo del título */
+  .tasks-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
